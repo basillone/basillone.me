@@ -1,0 +1,399 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+:root {
+    --mwxl: 1440px;
+    --gutter: calc((100vw - 1440px) / 2);
+}
+
+
+
+/* Hide the checkboxes for all toggle buttons all across the page */
+.upmenu_never {
+    position: absolute;
+    left: -100vw;
+}
+
+
+
+
+
+
+
+/**********************   HEADER   **********************/
+header {
+    border-bottom: 2px solid rgb(221, 221, 221);
+    margin-bottom: 30px;
+}
+
+nav {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* Burger menu */
+#essentials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: calc(var(--gutter) - 51px - 30px - 30px);
+    padding-right: 30px;
+}
+/* Burger icon container is invisible */
+.upmenu, .close_menu { display: none }
+/* Burger icon styling for when it is visible */
+.menu_icon {
+    margin: auto;
+    width: 20px;
+}
+
+
+/* Buttons and links */
+#info {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+    max-width: var(--mwxl);
+}
+
+
+/* Collapse header and grids at 768px */
+@media (min-width: 768px) {
+    #nav_links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    #nav_actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Adjust nav flex direction */
+    nav {flex-direction: column}
+    
+    /* Only keep logo and menu icon in nav */
+    #essentials {width: 100%}
+
+
+    /* Hidden nav button to open or close menu */
+    .close_menu, nav:has(> #essentials > #toggle:checked) .upmenu {display: none}
+
+    /* Visible nav button to open or close menu */
+    .upmenu, nav:has(> #essentials > #toggle:checked) .close_menu {
+        display: flex;
+        margin-left: auto;
+
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    .upmenu:hover, .close_menu:hover {
+        cursor: pointer;
+        background-color: rgb(240, 240, 240);
+    }
+
+
+    /* Mobile nav menu */
+    #info {
+        display: flex;
+        flex-direction: column;
+        
+        z-index: 1;
+        position: absolute;
+        left: -100%;
+        top: 149px;
+        
+        width: 80%;
+        background-color: white;
+        transition: transform 0.5s;
+    }
+
+    #nav_links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        border-bottom: 2px solid rgb(221, 221, 221);
+    }
+
+    #nav_actions {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Move nav bar into view when nav button is clicked */
+    nav:has(> #essentials > #toggle:checked) > #info {
+        transform: translateX(150%);
+    }
+}
+
+
+
+/* Nav button and link formatting */
+/* Styling the links in the nav bar and their hover effect */
+.head_link {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    
+    padding: 5px 10px;
+    border-radius: 18px;
+
+    min-width: fit-content;
+    max-width: fit-content;
+
+    transition: 0.5s;
+}
+.head_link:hover {
+    background-color: rgb(54, 69, 49);
+    color: white;
+}
+
+
+/* Sign in button styling and hover effect */
+#contact {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 8px 15px;
+
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+    min-width: fit-content;
+    max-width: fit-content;
+
+    transition: 0.5s;
+}
+#contact:hover {
+    background-color: rgb(54, 69, 49);
+    border-color: rgb(54, 69, 49);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************   MAIN BODY CONTENT   **********************/
+.main_box {
+    background-color:rgb(54, 69, 49);
+    color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5in;
+    
+    width: 100%;
+    max-width: var(--mwxl);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* Need to display images as blocks to remove whitespace when displayed - also make sure the image stays in the defined size */
+#main_body img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Bio content area */
+#profile_pic {
+    width: 30%
+}
+#bio {
+    width: 68%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Coursework content area */
+#coursework_text {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.course_list li a {
+    color: white;
+    text-decoration: none;
+}
+.course_list li a:hover {
+    text-decoration: underline;
+}
+#cr_lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+/* Adjust for small screen */
+@media (max-width: 767px) {
+    .main_box {flex-direction: column}
+    #profile_pic {
+        width: 70%;
+        order: 1;
+        padding-bottom: 10px;
+    }
+    #cr_lists {
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        width: 100%;
+    }
+}
+
+
+/* Action Button and a hover effect to change its background color*/
+.action_button {
+    background-color: rgb(54, 69, 49);
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+
+    padding: 10px 22px;
+    border-radius: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+.action_button:hover { background-color: rgb(195, 117, 9) }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************   FOOTER   **********************/
+footer {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    border-top: 2px solid rgb(221, 221, 221);
+    padding-top: 10px;
+}
+
+/* Footer spacing */
+#footer_all {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    max-width: var(--mwxl);
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    /* border: 1px solid red; */
+}
+
+
+.foot_column {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h3 {
+    text-align: center;
+    /* border: 1px solid orange; */
+}
+
+
+/* Styling the list container */
+#contact_list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styling the links inside each list item */
+footer a {
+    text-decoration: none;
+    color: rgb(142, 142, 142);
+    font-size: 16px;
+}
+/* Hover effect for the links in the footer */
+footer a:hover {color: black}
+
+
+@media (max-width: 1023px) {
+    /* Change the footer to be a column */
+    #footer_all { flex-direction: column }
+}
