@@ -1,118 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Basil Lone</title>
-
-        <link rel="icon" href="assets/rocket.svg">
-        <link rel="stylesheet" href="style.css">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
-
-    <body>
-        <header>
-            <nav>
-                <div id="essentials">
-                    <input type="checkbox" id="toggle" class="upmenu_never">
-                    <label for="toggle" class="upmenu"> <img class="menu_icon" src="assets/bars.svg"> </label>
-                    <label for="toggle" class="close_menu"> <img class="menu_icon" src="assets/xmark.svg"> </label>
-                </div>
-
-                <div id="info">
-                    <div id="nav_links">
-                        <a class="head_link" href="#coursework_text">Classes</a>
-                        <!-- <a class="head_link" href="#">Projects</a>
-                        <a class="head_link" href="#">Experience</a> -->
-                    </div>
-                    
-                    <div id="nav_actions">
-                        <a href="#footer_all"><button id="contact" >Contact</button></a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-
-        <div id="main_body">
-
-            <div class="main_box">
-                <div id="profile_pic">
-                    <img src="assets/IMG_5805.jpg">
-                </div>
-
-                <div id="bio">
-                    <div>
-                        <h2>About Me:</h2>
-                        <div>
-                            I grew up in Dubai and am currently at Dartmouth studying CS and Math. My coursework is focused on machine learning, computer vision, and stats. When I'm not studying, I enjoy playing piano, reading, and spending time with friends.
-                        </div>
-                        <a href="#footer_all"><button class="action_button">Contact</button></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="main_box">
-                <div id="coursework_text">
-                    <h2>Coursework</h2>
-
-                    <div id="cr_lists">
-                        <div id="cs_courses">
-                            Relevant CS Courses:
-
-                            <ul class="course_list">
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-10/"> Problem Solving via OOP* </a> </li>
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-74/"> Machine Learning and Statistical Analysis* </a> </li>
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-51/"> Computer Architecture </a> </li>
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-78/"> Deep Learning* </a> </li>
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-83/"> Computer Vision </a> </li>
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-52/"> Full-Stack Web Development* </a> </li>
-                            </ul>
-                        </div>
-
-                        <div id="math_courses">
-                            Relevant Math Courses:
-
-                            <ul class="course_list">
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/2023/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-30/"> Discrete Math for Computer Science </a> </li>
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/2023/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-22/"> Linear Algebra </a> </li>
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/2023/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-20/"> Probability </a> </li>
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/2023/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-40/"> Statistical Inference </a> </li>
-                                <li> <a href="https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-30-04/"> Evolutionary Game Theory </a> </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div>
-                        Courses marked with * received a citation - this indicates outstanding performance beyond the standard of an A
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <footer>
-
-            <div id="footer_all">
-                <div class="foot_column">
-                    <div class="foot_head">
-                        <h3> Contact </h3>
-                    </div>
-
-                    <ul id="contact_list">
-                        <li><a href="mailto:basil.lone.25@dartmouth.edu">basil.lone.25@dartmouth.edu</a></li>
-                        <li><a href="mailto:basillone15@gmail.com">basillone15@gmail.com</a></li>
-                        <li><a href="tel:+16036675642">+1-603-667-5642</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </footer>
-
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal website prototype</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
 </html>
