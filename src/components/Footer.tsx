@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  
   return <footer id="footer" className="bg-cream px-6 md:px-12 py-16 md:py-24">
       <div className="max-w-7xl mx-auto">
         <div className="w-full h-[1px] bg-ink/10 mb-12"></div>
@@ -23,9 +23,6 @@ export function Footer() {
             </div>
 
             <div className="mt-12 md:mt-0">
-              <span className="font-serif italic text-xl font-bold text-ink">
-                A. Chen
-              </span>
               
             </div>
           </div>
