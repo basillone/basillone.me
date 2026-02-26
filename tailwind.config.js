@@ -1,6 +1,7 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
   './index.html',
   './src/**/*.{js,ts,jsx,tsx}'
@@ -12,12 +13,12 @@ module.exports = {
         sans: ['"Inter"', 'system-ui', 'sans-serif'],
       },
       colors: {
-        cream: '#FAFAF7',
-        ink: '#0A0A0A',
-        accent: '#C8A96E',
-        card: '#F0EDE6',
-        border: '#E0DDD6',
-        muted: '#6B6860',
+        cream: 'rgb(var(--color-cream) / <alpha-value>)',
+        ink: 'rgb(var(--color-ink) / <alpha-value>)',
+        accent: 'rgb(var(--color-accent) / <alpha-value>)',
+        card: 'rgb(var(--color-card) / <alpha-value>)',
+        border: 'rgb(var(--color-border) / <alpha-value>)',
+        muted: 'rgb(var(--color-muted) / <alpha-value>)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out forwards',

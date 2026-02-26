@@ -9,17 +9,23 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --color-cream: #FAFAF7;
-    --color-ink: #0A0A0A;
-    --color-accent: #C8A96E;
-    --color-card: #F0EDE6;
-    --color-border: #E0DDD6;
-    --color-muted: #6B6860;
+    --color-cream: 250 250 247;
+    --color-ink: 10 10 10;
+    --color-accent: 200 169 110;
+    --color-card: 240 237 230;
+    --color-border: 224 221 214;
+    --color-muted: 107 104 96;
+  }
+  .dark {
+    --color-cream: 17 17 16;
+    --color-ink: 240 237 230;
+    --color-accent: 200 169 110;
+    --color-card: 28 28 26;
+    --color-border: 42 42 38;
+    --color-muted: 155 152 144;
   }
   body {
     @apply bg-cream text-ink font-sans antialiased;
-    background-color: var(--color-cream);
-    color: var(--color-ink);
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
