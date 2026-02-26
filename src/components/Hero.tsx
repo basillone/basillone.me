@@ -28,7 +28,7 @@ export function Hero() {
       }
     }
   };
-  return <section id="hero" className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 pt-20 pb-12 overflow-hidden">
+  return <section id="hero" className="relative min-h-[78vh] flex flex-col justify-center px-6 md:px-12 pt-12 pb-8 overflow-hidden">
       <motion.div className="max-w-7xl mx-auto w-full flex flex-col justify-center flex-1" variants={containerVariants} initial="hidden" animate="visible">
         {/* Editorial Top Label */}
         
