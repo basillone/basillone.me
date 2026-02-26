@@ -13,25 +13,25 @@ interface Project {
 const projects: Project[] = [{
   id: '1',
   number: '01',
-  title: 'Editorial OS',
-  description: 'A design system built for content-first digital publications, focusing on typography and readability.',
-  tags: ['Design System', 'React', 'TypeScript'],
+  title: 'Notaker',
+  description: 'A collaborative note-taking app with a focus on simplicity and speed.',
+  tags: ['React', 'Firebase', 'UX/UI'],
   gradient: 'from-[#E0C3FC] to-[#8EC5FC]',
   size: 'large'
 }, {
   id: '2',
   number: '02',
-  title: 'Cartography',
-  description: 'Interactive data visualization platform for geographic datasets.',
-  tags: ['Data Viz', 'D3.js', 'Python'],
+  title: 'HMM for Speech',
+  description: 'Hidden Markov Model implementation for speech pattern recognition.',
+  tags: ['Java', 'Data Science', 'Machine Learning'],
   gradient: 'from-[#fad0c4] to-[#ffd1ff]',
   size: 'normal'
 }, {
   id: '3',
   number: '03',
-  title: 'Meridian',
-  description: 'E-commerce platform with editorial product photography and storytelling.',
-  tags: ['Next.js', 'Commerce', 'Design'],
+  title: 'GPU Accelerated Handwriting Recognition',
+  description: 'LSTM RNN implementation for handwriting recognition, optimized with PyTorch for real-time performance.',
+  tags: ['PyTorch', 'GPU', 'Deep Learning'],
   gradient: 'from-[#cfd9df] to-[#e2ebf0]',
   size: 'normal'
 }];
