@@ -51,7 +51,7 @@ export function Hero() {
       </motion.div>
 
       {/* Scroll Indicator */}
-      <motion.div className="absolute bottom-8 left-6 md:left-12 flex items-center space-x-4" initial={{
+      {/* <motion.div className="absolute bottom-8 left-6 md:left-12 flex items-center space-x-4" initial={{
       opacity: 0
     }} animate={{
       opacity: 1
@@ -71,6 +71,6 @@ export function Hero() {
       }}>
           <ArrowDown className="w-4 h-4 text-accent" />
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </section>;
 }
