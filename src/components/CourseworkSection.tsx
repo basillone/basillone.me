@@ -10,40 +10,40 @@ interface Course {
 }
 const courses: Course[] = [{
   id: '1',
-  code: 'CS 78',
-  title: 'Deep Learning',
-  description: 'Introduction to deep learning concepts, architectures, and applications in AI.',
+  code: 'CS 74',
+  title: 'Machine Learning and Statistical Analysis',
+  description: '. An introduction to machine learning algorithms, statistical modeling, and data analysis techniques.',
   category: 'Computer Science'
 }, {
   id: '2',
-  code: 'MATH 201',
-  title: 'Linear Algebra',
-  description: 'Vectors, matrices, transformations, and their applications in computing.',
-  category: 'Mathematics'
-}, {
-  id: '3',
-  code: 'DES 150',
-  title: 'Visual Communication',
-  description: 'Principles of typography, layout, and visual hierarchy in design.',
-  category: 'Design'
-}, {
-  id: '4',
-  code: 'CS 301',
-  title: 'Data Structures',
-  description: 'Advanced data organization, algorithms, and complexity analysis.',
+  code: 'CS 78',
+  title: 'Deep Learning',
+  description: 'An introduction to deep learning architectures, neural networks, and applications in AI.',
   category: 'Computer Science'
 }, {
+  id: '3',
+  code: 'CS 83',
+  title: 'Computer Vision',
+  description: 'An introduction to computer vision techniques, image processing, and object detection.',
+  category: 'Computer Science'
+}, {
+  id: '4',
+  code: 'MATH 23',
+  title: 'Differential Equations',
+  description: 'An introduction to ordinary and partial differential equations, including solution techniques and applications.',
+  category: 'Mathematics'
+}, {
   id: '5',
-  code: 'STAT 200',
-  title: 'Probability & Statistics',
-  description: 'Statistical reasoning, distributions, and data analysis methods.',
+  code: 'MATH 40',
+  title: 'Statistical Inference',
+  description: 'An introduction to statistical inference, hypothesis testing, and estimation methods.',
   category: 'Mathematics'
 }, {
   id: '6',
-  code: 'DES 280',
-  title: 'Interaction Design',
-  description: 'User-centered design, prototyping, and digital product design.',
-  category: 'Design'
+  code: 'MATH 86',
+  title: 'Mathematical Finance',
+  description: 'An introduction to mathematical finance concepts, including derivatives, pricing models, and risk management.',
+  category: 'Mathematics'
 }];
 export function CourseworkSection() {
   return <section id="coursework" className="py-24 px-6 md:px-12 bg-cream">
