@@ -103,7 +103,7 @@ function CourseCard({
         {course.description}
       </p>
 
-      <div className="mt-auto pt-4 border-t border-border/50 flex items-center text-ink opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+      <div className="mt-auto pt-4 border-t border-border/50 flex items-center text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
         <span className="font-sans text-xs font-medium tracking-wider mr-2">
           VIEW SYLLABUS
         </span>

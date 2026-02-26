@@ -3,10 +3,14 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Sun, Moon } from 'lucide-react';
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const {
     scrollY
   } = useScroll();
+  // Apply dark mode on initial mount
+  useEffect(() => {
+    document.documentElement.classList.add('dark');
+  }, []);
   // Add background blur when scrolled
   useEffect(() => {
     const handleScroll = () => {
