@@ -33,7 +33,7 @@ export function Footer() {
               <FooterLink href="mailto:basillone15@gmail.com" label="Email" icon={<Mail className="w-4 h-4" />} />
               <FooterLink href="https://github.com/basillone" label="GitHub" icon={<Github className="w-4 h-4" />} />
               <FooterLink href="https://linkedin.com/in/basil-lone-a30805241" label="LinkedIn" icon={<Linkedin className="w-4 h-4" />} />
-              <FooterLink href="#" label="Twitter" icon={<Twitter className="w-4 h-4" />} />
+              <FooterLink href="https://x.com/Bas1573" label="Twitter" icon={<Twitter className="w-4 h-4" />} />
             </nav>
 
             
