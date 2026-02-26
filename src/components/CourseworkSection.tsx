@@ -10,9 +10,9 @@ interface Course {
 }
 const courses: Course[] = [{
   id: '1',
-  code: 'CS 101',
-  title: 'Intro to Computer Science',
-  description: 'Fundamentals of programming, algorithms, and computational thinking.',
+  code: 'CS 78',
+  title: 'Deep Learning',
+  description: 'Introduction to deep learning concepts, architectures, and applications in AI.',
   category: 'Computer Science'
 }, {
   id: '2',
@@ -85,7 +85,7 @@ function CourseCard({
     duration: 0.6,
     delay: index * 0.1,
     ease: 'easeOut'
-  }} className="group relative flex flex-col h-full p-6 border border-transparent hover:border-accent/30 bg-transparent hover:bg-white transition-all duration-500 ease-out">
+  }} className="group relative flex flex-col h-full p-6 border border-transparent hover:border-accent/30 bg-transparent hover:bg-white dark:hover:bg-card dark:hover:shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:rounded-[8px] transition-all duration-500 ease-out">
       <div className="flex justify-between items-start mb-4">
         <span className="font-mono text-xs text-accent font-medium tracking-wider">
           {course.code}
